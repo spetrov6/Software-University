@@ -1,12 +1,6 @@
-import sys
 n = int(input())
-min = sys.maxsize
-max = -sys.maxsize
+numbers = []
 for i in range(n):
-    num = int(input())
-    if num > max:
-        max = num
-    if num < min:
-        min = num
-print(f"Max number: {max}")
-print(f"Min number: {min}")
+    numbers.append(int(input()))
+print(f"Max number: {max(numbers)}")
+print(f"Min number: {min(numbers)}")
